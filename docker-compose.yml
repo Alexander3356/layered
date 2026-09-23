@@ -17,6 +17,14 @@ services:
       timeout: 5s
       retries: 10
 
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:80
+
+
+
   backend:
     build: 
       context: ./be
